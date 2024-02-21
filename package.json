@@ -1,0 +1,15 @@
+{
+  "name": "news-home-page",
+  "version": "1.0.0",
+  "description": "front-end-mentor project news homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "frontend-mentor",
+    "news-homepage"
+  ],
+  "author": "Remco Jonk",
+  "license": "ISC"
+}
