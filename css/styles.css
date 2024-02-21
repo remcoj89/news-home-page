@@ -3,7 +3,7 @@
   --color-primary-soft-orange: hsl(35, 77%, 62%);
   --color-primary-soft-red:hsl(5, 85%, 63%);
   --color-neutral-off-white: hsl(36, 100%, 99%);
-  --color-neutral-grayish-blue: hsl(233, 8%, 79%);
+  --color-neutral-grayish-blue: hsl(236, 8%, 79%);
   --color-neutral-dark-grayish-blue: hsl(236, 13%, 42%);
   --color-neutral-very-dark-blue: hsl(240, 100%, 5%);
 }
@@ -40,7 +40,30 @@ body{
 img {
   max-width: 100%;
 }
+
+p {
+  line-height: 27px;
+}
 /* End Base */
+
+/* Components */
+  .btn-primary {
+    background-color: var(--color-primary-soft-red);
+    border: none;
+    color: var(--color-neutral-off-white);
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 4.38px;
+    line-height: 24px;
+    padding: 1.3rem 3.5rem;
+    text-transform: uppercase;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-neutral-very-dark-blue);
+  }
+
+/* End Components */
 
 /* Nav */
 nav .container {
@@ -97,9 +120,98 @@ nav .container {
 }
 /* End Nav */
 
-
 /* Header */
-  .header-content img{
-    width: 100%;
-  }
+.header-content img{
+width: 100%;
+}
+
+.header-content h1 {
+  color: var(--color-neutral-very-dark-blue);
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 2.4rem 0 1.6rem;
+}
+
+.header-content p {
+  margin-bottom: 2.7rem;
+}
+
+aside {
+  background-color: var(--color-neutral-very-dark-blue);
+  margin: 6.4rem 0;
+  padding: 2.4rem 2.1rem;
+}
+
+aside h2 {
+  color: var(--color-primary-soft-orange);
+  font-size: 3.2rem;
+}
+
+.header-card {
+  padding: 3.5rem 0;
+  border-bottom: solid 1px var(--color-neutral-grayish-blue);
+}
+
+.header-card:last-child {
+  border: none;
+}
+
+.header-card h3 {
+  color: var(--color-neutral-off-white);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 0.8rem;
+}
+
+.header-card h3:hover {
+  color: var(--color-primary-soft-orange);
+}
 /* End Header */
+
+/*  Main */
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-img {
+    margin-right: 1.6rem;
+    width: 30%;
+  }
+
+  .card-content {
+    width: 70%;
+  }
+
+  .card-content h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  .card-content h3 {
+    color: var(--color-neutral-very-dark-blue);
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1.2rem 0 0.9rem;
+  }
+
+  .card-content h3:hover {
+    color: var(--color-primary-soft-red)
+  }
+/* End Main */
+
+/* Footer */
+  footer {
+    text-align: center;
+    line-height: 1.6;
+  }
+/* End Footer */
