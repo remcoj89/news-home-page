@@ -4,7 +4,7 @@
   --color-primary-soft-red:hsl(5, 85%, 63%);
   --color-neutral-off-white: hsl(36, 100%, 99%);
   --color-neutral-grayish-blue: hsl(236, 8%, 79%);
-  --color-neutral-dark-grayish-blue: hsl(236, 13%, 42%);
+  --color-neutral-dark-grayish-blue: hsl(237, 13%, 42%);
   --color-neutral-very-dark-blue: hsl(240, 100%, 5%);
 
   --font-size-heading-xl: clamp(4rem, 5vw + 1rem, 5.6rem);
@@ -87,20 +87,6 @@ nav .container {
   display: none;
 }
 
-@media (min-width: 750px) {
-  .nav-links-desktop {
-    display: flex;
-    gap: 4.1rem;
-  }
-
-  .nav-link {
-    cursor: pointer;
-  }
-
-  .nav-link:hover{
-    color: var(--color-primary-soft-red);
-  }
-}
 
 .nav-links {
   display: flex;
@@ -143,6 +129,20 @@ nav .container {
 }
 
 @media (min-width: 750px) {
+  .nav-links-desktop {
+    display: flex;
+    gap: 4.1rem;
+  }
+
+  .nav-link {
+    cursor: pointer;
+    color: var(--color-neutral-grayish-blue);
+  }
+
+  .nav-link:hover{
+    color: var(--color-primary-soft-red);
+  }
+
   #burger-menu {
     display: none;
   }
