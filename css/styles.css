@@ -83,6 +83,25 @@ nav .container {
   padding: 2.8rem 0 3.2rem 0;
 }
 
+.nav-links-desktop {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .nav-links-desktop {
+    display: flex;
+    gap: 4.1rem;
+  }
+
+  .nav-link {
+    cursor: pointer;
+  }
+
+  .nav-link:hover{
+    color: var(--color-primary-soft-red);
+  }
+}
+
 .nav-links {
   display: flex;
   flex-direction: column;
@@ -108,7 +127,7 @@ nav .container {
 
 .nav-link {
   color: var(--color-neutral-very-dark-blue);
-  font-size: var(--font-size-heading-xl);
+  font-size: var(--font-size-body);
 }
 
 #logo{
@@ -121,6 +140,12 @@ nav .container {
   cursor: pointer;
   height: 17px;
   width:40px;
+}
+
+@media (min-width: 750px) {
+  #burger-menu {
+    display: none;
+  }
 }
 
 #close-menu{
